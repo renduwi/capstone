@@ -25,7 +25,7 @@ Route::get('/users/{name}/{id}', function($name, $id){
 use Carbon\Carbon;
 use App\User;
 
-Route::get('/', 'PagesController@index');    
+Route::get('/index', 'PagesController@index');    
 Route::get('/login', 'PagesController@login');  
 Route::get('/register', 'PagesController@register');  
 
