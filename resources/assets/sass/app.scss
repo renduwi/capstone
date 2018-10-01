@@ -1,0 +1,70 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#mainNav
+{
+    background-color: white;
+    color: black;
+}
+#mainNav {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #fff;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  #mainNav .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #F05F40;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #f05f40;
+  }
+  
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    font-size: .9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #212529;
+  }
+  
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #F05F40;
+  }
+  
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+    color: #F05F40 !important;
+    background-color: transparent;
+  }
+  
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+    background-color: transparent;
+  }
+
+.custom-toggler.navbar-toggler 
+{
+  border-color: red;
+}
+.navbar-toggler-icon 
+{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color:red;
+}   
+
+
+  
