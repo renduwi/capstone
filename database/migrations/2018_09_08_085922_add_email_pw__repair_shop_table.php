@@ -26,7 +26,7 @@ class AddEmailPwRepairShopTable extends Migration
      */
     public function down()
     {
-        Schema::table('list_vehicles', function($table){
+        Schema::table('repair_shop', function($table){
             $table->dropColumn('type');
         });
     }
