@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-lg-8 mx-auto">
                       <p class="text-faded mb-5">In Veem, we help you find the nearest mechanic to help you with your vehicle breakdown needs.</p>
-                      <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ secure_asset( 'url ('login')') }}">{{ __('Login') }}</a>
+                      <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ url ('login') }}">{{ __('Login') }}</a>
                       <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ url ('register') }}">{{ __('Register') }}</a>
                     </div>
                   </div>
