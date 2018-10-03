@@ -55,5 +55,8 @@ Route::prefix('repairshop')->group(function(){
     Route::get('/', 'RepairShopController@index')->name('repairshop.dashboard');
 });
 
+if (env('APP_ENV') === 'production') {
+    URL::forceSchema('https');
+}
 
 
