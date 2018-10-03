@@ -17,8 +17,8 @@ class VehicleController extends Controller
     {
 
        $user_id = auth()->user()->id;
-       $id = User::find($user_id);
-        return view('vehicle.home')->with('vehicle', $id->vehicle);
+       $user = User::find($user_id);
+        return view('vehicle.home')->with('vehicle', $user->vehicle);
     }
 
     
@@ -54,7 +54,7 @@ class VehicleController extends Controller
         $vehicle->brand = $request->input('brand');
         $vehicle->model = $request->input('model');
         $vehicle->color = $request->get('color');
-        $vehicle->id = auth()->user()->id;
+        $vehicle->user_id = auth()->user()->id;
         $vehicle->save();
 
         return redirect('/vehicle')->with('success', 'Vehicle saved!');
@@ -70,7 +70,7 @@ class VehicleController extends Controller
      */
     public function show($Veid)
     {
-        $vehicle = ListVehicle::find($id);
+        $vehicle = ListVehicle::find($user_id);
         return view ('vehicle.show')->with('vehicle', $vehicle);
     }
 
