@@ -21,7 +21,7 @@ class AdRepairShopController extends Controller
 
     public function index()
     {
-        return view('admin_repairshop.index');
+        return view('Admin_repairshop.index');
     }
 
     /**
@@ -31,7 +31,7 @@ class AdRepairShopController extends Controller
      */
     public function create()
     {
-        return view('admin_repairshop.create');
+        return view('Admin_repairshop.create');
     }
 
     /**
@@ -78,7 +78,7 @@ class AdRepairShopController extends Controller
      */
     public function show($id)
     {
-        return view('admin_repairshop.show');
+        return view('Admin_repairshop.show');
     }
 
     /**
@@ -117,7 +117,7 @@ class AdRepairShopController extends Controller
 
     public function showRegForm()
     {
-        return view('admin_repairshop.register');
+        return view('Admin_repairshop.register');
     }
 
 }
