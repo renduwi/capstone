@@ -24,7 +24,6 @@ class ServiceReqController extends Controller
     {
         $user_id = auth()->user()->id;
         $user = DB::table('list_vehicles')->where('user_id', auth()->user()->id)->get();
-        $user = DB::table('service_request')->where('user_id', auth()->user()->id)->get();
         
     return view('servicereq.index')->with('serv', $user);
        
@@ -129,10 +128,10 @@ class ServiceReqController extends Controller
      */
     public function show($Sid)
     {
-        //$user_id = auth()->user()->Mid;
-        //$mech = ServiceReq::find($Mid);
-        //return view('servicereq.show')->with('mech', $Mid->mech);
-        return view('servicereq.show');
+        $user_id = auth()->user()->Mid;
+        $mech = ServiceReq::find($Mid);
+        return view('servicereq.show')->with('mech', $Mid->mech);
+        //return view('servicereq.show');
     }
 
     /**

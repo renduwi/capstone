@@ -19,8 +19,8 @@ class ListMechanicController extends Controller
      */
     public function index()
     {
-        return App\ServiceReq::where('Mid', auth()->user()->id)->get();// korek na ba? @@ tryy
-        // return view('list_mechanic.index');
+        //return App\ServiceReq::where('Mid', auth()->user()->id)->get();// korek na ba? @@ tryy
+         return view('list_mechanic.index');
     }
 
     /**
