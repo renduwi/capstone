@@ -33,7 +33,7 @@ Route::resource('posts', 'PostsController');
 Route::resource('vehicle', 'VehicleController');
 Route::resource('repair', 'AdRepairShopController');
 Route::resource('mechaniclist', 'ListMechanicController');
-Route::get('/servicereq', 'ServiceReqController@index');
+Route::get('servicereq', 'ServiceReqController');
 
 
 Auth::routes();

@@ -21,7 +21,7 @@
  
      <!-- Custom styles for this template -->
      <link href="{{secure_asset('css/creative.min.css') }}" rel="stylesheet">
-     <title>Document</title>
+     <title>Veem App</title>
    </head>
 
    <body id="page-top">
