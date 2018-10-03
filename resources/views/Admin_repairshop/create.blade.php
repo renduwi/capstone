@@ -19,12 +19,11 @@
 </head>
 <body>
  <div class="container">
-     <div class="col-sm-4">
         {!! Form::open(['action'=> 'AdRepairShopController@store', 'method' => 'POST']) !!}
         @csrf
          <div class="form-group">
             {{Form::label('label1', 'Name')}}
-            {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'type'])}}
+            {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Name'])}}
         </div>
         <div class="form-group">
                 {{Form::label('label1', 'Email')}}
@@ -35,22 +34,22 @@
                 {{Form::text('password', '', ['class' => 'form-control', 'placeholder' => 'Password'])}}
         </div>
         <div class="form-group">
-                {{Form::label('label1', 'Working Hours')}}
-                {{Form::time('workinghrs', '', ['class' => 'form-control'])}}
+                {{Form::label('label1', 'Repair shop opens')}}
+                {{Form::time('start_time', '', ['class' => 'form-control'])}}
         </div>
         <div class="form-group">
             {{Form::label('label1', 'Working Hours')}}
-            {{Form::time('workinghrs', '', ['class' => 'form-control'])}}
+            {{Form::time('end_time', '', ['class' => 'form-control'])}}
     </div>
         {{Form::hidden('type', 'Repair Shop')}}
         <div id="map"><!-- Google Map Goes Here --></div>
         <div class="form-group">
             {{Form::label('label1', 'Lat')}}
-            {{Form::text('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
+            {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
         </div>
         <div class="form-group">
             {{Form::label('label1', 'Lng')}}
-            {{Form::text('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
+            {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
         </div>
         <button class="btn btn-sm btn-danger">Register</button>
     {{Form::close()}}
