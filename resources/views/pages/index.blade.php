@@ -20,7 +20,7 @@
      <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
  
      <!-- Custom styles for this template -->
-     <link href="css/creative.min.css" rel="stylesheet">
+     <link href="{{secure_asset('css/creative.min.css') }}" rel="stylesheet">
  
    </head>
 
