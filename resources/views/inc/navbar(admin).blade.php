@@ -26,11 +26,11 @@
                 @guest
                       <li class="nav-item nav-bullet" style=" display: inline-block;
                     list-style: none;"  >
-                        <a class="nav-link text-uppercase" href="{{ route('login') }}">login</a>
+                        <a class="nav-link text-uppercase" href="{{ url ('login') }}">login</a>
                     </li>
                     <li class="nav-item nav-bullet" style=" display: inline-block;
                     list-style: none;">
-                        <a class="nav-link text-uppercase" href="{{ route('register') }}">Register</a>
+                        <a class="nav-link text-uppercase" href="{{ url ('register') }}">Register</a>
                     </li>
                 @else
                     <li class="nav-item nav-bullet" style=" display: inline-block;
