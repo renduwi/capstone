@@ -25,15 +25,15 @@ Route::get('/users/{name}/{id}', function($name, $id){
 use Carbon\Carbon;
 use App\User;
 
-Route::get('/', 'PagesController@index');    
-Route::get('/login', 'PagesController@login');  
+Route::get('/', 'PagesController@login');    
+// Route::get('/login', 'PagesController@login');  
 Route::get('/register', 'PagesController@register');  
 
 Route::resource('posts', 'PostsController');
 Route::resource('vehicle', 'VehicleController');
 Route::resource('repair', 'AdRepairShopController');
 Route::resource('mechaniclist', 'ListMechanicController');
-Route::resource('servicereq', 'ServiceReqController');
+Route::get('/servicereq', 'ServiceReqController@index');
 
 
 Auth::routes();
