@@ -148,7 +148,7 @@
                     <div class="col-lg-4 mr-auto text-center">
                       <i class="fas fa-at fa-3x mb-3 sr-contact-2"></i>
                       <p>
-                        <a href="mailto:your-email@your-domain.com">veemapp@gmail.com</a>
+                        <a href="mailto:veemapp@gmail.com">veemapp@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -165,7 +165,7 @@
               <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
           
               <!-- Custom scripts for this template -->
-              <script src="js/creative.min.js"></script>
+              <script src="{{secure_asset('js/creative.min.js')}}"></script>
           
             </body>
           
