@@ -26,11 +26,11 @@
                 @guest
                       <li class="nav-item nav-bullet" style=" display: inline-block;
                     list-style: none;"  >
-                        <a class="nav-link text-uppercase" href="{{ url ('login') }}">login</a>
+                        <a class="nav-link text-uppercase" href="{{ route('login') }}">login</a>
                     </li>
                     <li class="nav-item nav-bullet" style=" display: inline-block;
                     list-style: none;">
-                        <a class="nav-link text-uppercase" href="{{ url ('register') }}">Register</a>
+                        <a class="nav-link text-uppercase" href="{{ route('register') }}">Register</a>
                     </li>
                 @else
                     <li class="nav-item nav-bullet" style=" display: inline-block;
@@ -48,13 +48,13 @@
                         </a>
 
                         <div class="dropdown-menu dropdown-menu-right text-uppercase" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ url ('logout') }}"
+                            <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 
-                            <form id="logout-form" action="{{ url ('logout') }}" method="POST" style="display: none;">
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                 @csrf
                             </form>
                         </div>
