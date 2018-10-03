@@ -17,8 +17,8 @@ class VehicleController extends Controller
     {
 
        $user_id = auth()->user()->id;
-       $user = User::find($user_id);
-        return view('vehicle.home')->with('vehicle', $user->vehicle);
+       $id = User::find($user_id);
+        return view('vehicle.home')->with('vehicle', $id->vehicle);
     }
 
     
