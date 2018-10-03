@@ -19,7 +19,7 @@
             <div class="card card-signin my-5">
               <div class="card-body">
                 <h5 class="card-title text-center">Log In</h5>
-                <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
+                <form method="POST" action="{{ url ('login') }}" aria-label="{{ __('Login') }}">
                         @csrf
                 <div class="form-group row">
                         
@@ -57,7 +57,7 @@
                   </div>
                   
                   <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">   {{ __('Login') }}</button>
-                            <a class="btn btn-link" href="{{ route('password.request') }}">
+                            <a class="btn btn-link" href="{{ url ('password.request') }}">
                                 {{ __('Forgot Your Password?') }}
                             </a>
 
