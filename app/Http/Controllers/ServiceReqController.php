@@ -83,8 +83,8 @@ class ServiceReqController extends Controller
         $Serv->lng = $request->input('lng');
         $Serv->situation = $request->get('situation');
         $Serv->vehicle = $request->get('vehicle');
-
-
+        $Serv->status = $request->get('status');
+        
         //Gets the nearest available mechanic
         $mechanics = User::where('availability', "1")
                         ->get();

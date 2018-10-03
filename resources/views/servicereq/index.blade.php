@@ -108,6 +108,8 @@
                 {!! Form::radio('situation', 'Overheat', ['id' => '1']) !!}
                 {!! Form::label('radio1', 'Overheat') !!}
                 </br>
+                {!! Form::hidden('status', 'not yet done') !!}
+
             </div>
         </div>
           <div class="col">
