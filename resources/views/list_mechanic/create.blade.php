@@ -79,34 +79,34 @@
 <div id="map"><!-- Google Map Goes Here --></div>
 
 <div class="container">
-                        <div class="form-group">
-                                {!! Form::open(['action'=> 'ListMechanicController@store', 'method' => 'POST']) !!}
-                                {{Form::label('na', 'nsm')}}
-                                {{-- {{Form::text('ln', '', ['class' => 'form-control', 'placeholder' => 'Last name'])}}
-                                {{Form::text('fn', '', ['class' => 'form-control', 'placeholder' => 'First name'])}} --}}
-                                {{Form::text('mi', '', ['class' => 'form-control', 'placeholder' => 'Middle initial'])}}
-                      
-                                {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
-                            
-                             
-                                {{Form::password('password', '', ['class' => 'form-control', 'placeholder' => 'Password'])}}
-                         
-                         
-                            <div class="form-group">
-                                {{Form::label('number', 'Contact number')}}                                
-                                {{Form::text('phonenum', '', ['class' => 'form-control', 'placeholder' => 'Enter valid contact number'])}}
-                            </div>
-                            <div class="form-group">
-                            {{Form::text('Rpid', '', ['class' => 'form-control', 'placeholder' => 'Rpid'])}}
-                            </div>
+  <div class="form-group">
+          {!! Form::open(['action'=> 'ListMechanicController@store', 'method' => 'POST']) !!}
+          {{Form::label('na', 'nsm')}}
+          {{-- {{Form::text('ln', '', ['class' => 'form-control', 'placeholder' => 'Last name'])}}
+          {{Form::text('fn', '', ['class' => 'form-control', 'placeholder' => 'First name'])}} --}}
+          {{Form::text('mi', '', ['class' => 'form-control', 'placeholder' => 'Middle initial'])}}
 
-                           
-                            {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
-                            {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
-                            {{Form::hidden('type', 'Mechanic', ['class' => 'form-control', 'placeholder' => ''])}}
-                            
-                            {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
-                            {!! Form::close() !!}
+          {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
+      
+        
+          {{Form::password('password', '', ['class' => 'form-control', 'placeholder' => 'Password'])}}
+    
+    
+      <div class="form-group">
+          {{Form::label('number', 'Contact number')}}                                
+          {{Form::text('phonenum', '', ['class' => 'form-control', 'placeholder' => 'Enter valid contact number'])}}
+      </div>
+      <div class="form-group">
+      {{Form::text('Rpid', '', ['class' => 'form-control', 'placeholder' => 'Rpid'])}}
+      </div>
+
+      
+      {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
+      {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
+      {{Form::hidden('type', 'Mechanic', ['class' => 'form-control', 'placeholder' => ''])}}
+      
+      {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
+      {!! Form::close() !!}
 
 </div>
 

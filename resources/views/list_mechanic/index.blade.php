@@ -1,7 +1,6 @@
 @extends ('layouts.app')
 
 @section('content')
-{{-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="container">
         <div class="row justify-content-center">
                         @if (session('status'))
@@ -16,9 +15,9 @@
             <tr>
                 <th class="text-center">#</th>
                 <th>Name</th>
-                <th>Brand</th>
-                <th class="text-right">Model</th>
-                <th class="text-right">Action</th>
+                <th>Repair Shop ID</th>
+                {{-- <th class="text-right">Model</th>
+                <th class="text-right">Action</th> --}}
             </tr>
         </thead>
         <tbody>
@@ -52,5 +51,4 @@
         <a href="/vehicle/create" class="btn btn-warning">Add Vehicle</a>
     @endif
 </div>
-</div> --}}
 @endsection
