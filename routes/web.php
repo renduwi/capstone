@@ -34,7 +34,7 @@ Route::resource('vehicle', 'VehicleController');
 Route::resource('repair', 'AdRepairShopController');
 Route::resource('mechaniclist', 'ListMechanicController');
 Route::resource('servicereq', 'ServiceReqController');
-
+Route::get('/servicereq/show', 'ServiceController@show');
 
 Auth::routes();
 
