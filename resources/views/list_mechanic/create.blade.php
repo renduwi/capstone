@@ -103,7 +103,7 @@
                            
                             {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
                             {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
-                            {{Form::hidden('type', 'Mechanic', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
+                            {{Form::hidden('type', 'Mechanic', ['class' => 'form-control', 'placeholder' => ''])}}
                             
                             {{Form::submit('Submit', ['class'=>'btn btn-primary'])}}
                             {!! Form::close() !!}
