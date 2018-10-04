@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <div class="container">
@@ -30,5 +29,5 @@
                     <td>{{$ser->status}}</td>
                 </tr>
                 @endforeach
-
+            @endif
 @endsection
