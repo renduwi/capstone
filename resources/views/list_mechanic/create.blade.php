@@ -82,8 +82,8 @@
   <div class="form-group">
           {!! Form::open(['action' => 'ListMechanicController@store', 'method' => 'POST']) !!}
           {{Form::label('na', 'nsm')}}
-          {{Form::text('ln', '', ['class' => 'form-control', 'placeholder' => 'Last name'])}}
-          {{Form::text('fn', '', ['class' => 'form-control', 'placeholder' => 'First name'])}}
+          {{Form::text('lname', '', ['class' => 'form-control', 'placeholder' => 'Last name'])}}
+          {{Form::text('fname', '', ['class' => 'form-control', 'placeholder' => 'First name'])}}
           {{Form::text('mi', '', ['class' => 'form-control', 'placeholder' => 'Middle initial'])}}
 
           {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
