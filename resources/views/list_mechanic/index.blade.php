@@ -8,14 +8,16 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-    @if(count($vehicle) > 0)
+    @if(count($mechanics) > 0)
     <div class="table-responsive{-sm|-md|-lg|-xl}">
         <table class="table table-striped">
             <thead>
             <tr>
                 <th class="text-center">#</th>
+                <th>ID</th>
                 <th>Name</th>
-                <th>Repair Shop ID</th>
+                <th>Phonenum</th>
+
                 {{-- <th class="text-right">Model</th>
                 <th class="text-right">Action</th> --}}
             </tr>
