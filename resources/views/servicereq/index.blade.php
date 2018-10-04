@@ -87,7 +87,7 @@
       
       {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
       {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
-      {{Form::hidden('situation', 'On going', ['class' => 'form-control', 'id' => 'situation', 'placeholder' => ''])}}
+      {{-- {{Form::hidden('situation', 'On going', ['class' => 'form-control', 'id' => 'situation', 'placeholder' => ''])}} --}}
 
         <div class="container">
           <div class="row">
