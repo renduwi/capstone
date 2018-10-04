@@ -44,8 +44,8 @@ class ListMechanicController extends Controller
           $this->validate($request, [
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6',
-            'lname' => 'required',
-            'fname' => 'required',
+            'ln' => 'required',
+            'fn' => 'required',
             'phonenum' => 'required',
             'availability' => 'required',
             'lat' => 'required',
@@ -55,8 +55,8 @@ class ListMechanicController extends Controller
         $Mech = new ListMechanic;
         $Mech->email = $request->input('email');
         $Mech->password = Hash::make($request['password']);
-        $Mech->lname = $request->input('lname');
-        $Mech->fname = $request->input('fname');
+        $Mech->ln = $request->input('lname');
+        $Mech->fn = $request->input('fname');
         $Mech->mi = $request->input('mi');
         $Mech->phonenum = $request->input('phonenum');
         $Mech->availability = $request->input('availability');
