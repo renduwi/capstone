@@ -37,9 +37,6 @@
                     </div>
                     
         </tfoot>
-    @elseif(count($vehicle) == 0)
-     <center> <h1>No vehicle</h1>
-        <a href="/vehicle/create" class="btn btn-warning">Add Vehicle</a>
     @endif
 </div>
 @endsection
