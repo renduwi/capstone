@@ -21,20 +21,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach($vehicle as $veh)
+            @foreach($mechanics as $mechanic)
             <tr>
-                <td>{{$veh->Veid}}</td>
-                <td>{{$veh->name}}</td>
-                <td>{{$veh->brand}}</td>
-                <td>{{$veh->model}}</td>
-                <td class="td-actions text-right">
-                <a href="/vehicle/show" class="btn btn-success">
-                    <i class="material-icons md-18">edit</i>
-                </a>
-                <a href="/vehicle/show" class="btn btn-danger">
-                    <i class="material-icons md-18">delete_forever</i>
-                </a>
-                    </td>
+                <td>{{$mechanic->id}}</td>
+                <td>{{$mechanic->lname}}, {{$mechanic->fname}}</td>
+                <td>{{$mechanic->phonenum}}</td>
             </tr>
             @endforeach
         </table>
@@ -42,7 +33,7 @@
                 <tr>
                   <th colspan="4">
                     <div class="ui right floated small primary labeled icon button">
-                        <a href="/vehicle/create" class="btn btn-warning">Add Vehicle</a>
+                        <a href="/mechaniclist/create" class="btn btn-warning">Add Vehicle</a>
                     </div>
                     
         </tfoot>

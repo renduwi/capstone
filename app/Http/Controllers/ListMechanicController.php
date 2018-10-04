@@ -20,7 +20,7 @@ class ListMechanicController extends Controller
     public function index()
     {
         $mechanics = User::where('type', 'Mechanic')->get();
-        return $mechanics;
+        // return $mechanics;
          return view('list_mechanic.index', compact('mechanics'));
     }
 
