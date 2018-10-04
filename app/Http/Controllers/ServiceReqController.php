@@ -112,11 +112,8 @@ class ServiceReqController extends Controller
         //$Sid = DB::table('service_request')->get('Serv');
         $user = ServiceReq::where('Mid', '!=', auth()->user()->id)->get();
 
-        if (\Notification::send($user, new NotiMechanic(servicereq::latest('Sid')->first())))
-        {
         return view('servicereq.show')->with('success', 'saved!');
           //return back()->with('success', 'saved!');;  
-        }
         //return redirect('servicereq.show')->with('success', 'saved!');
     }
 
@@ -128,10 +125,10 @@ class ServiceReqController extends Controller
      */
     public function show($Sid)
     {
-        $user_id = auth()->user()->Mid;
-         $user = ServiceReq::find($user_id);
-        return view('servicereq.show')->with('serv', $serv);
-        //return view('servicereq.show');
+        // $user_id = auth()->user()->Mid;
+        //  $user = ServiceReq::find($user_id);
+        // return view('servicereq.show')->with('serv', $serv);
+        // //return view('servicereq.show');
     }
 
     /**
