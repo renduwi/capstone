@@ -43,7 +43,7 @@
                         </li>
                         @endif --}}
 
-                        @if (Auth::check())
+                        
                         {{-- <li class="nav-item dropdown nav-bullet" style=" display: inline-block;
                         list-style: none;">
                             <a href="#" id="navbarDropdown" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
