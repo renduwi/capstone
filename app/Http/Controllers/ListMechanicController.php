@@ -56,8 +56,8 @@ class ListMechanicController extends Controller
         $Mech = new ListMechanic;
         $Mech->email = $request->input('email');
         $Mech->password = Hash::make($request['password']);
-        $Mech->ln = $request->input('lname');
-        $Mech->fn = $request->input('fname');
+        $Mech->ln = $request->input('ln');
+        $Mech->fn = $request->input('fn');
         $Mech->mi = $request->input('mi');
         $Mech->phonenum = $request->input('phonenum');
         $Mech->availability = $request->input('availability');
