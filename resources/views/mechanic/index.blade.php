@@ -2,7 +2,7 @@
 
 @section('content')
 
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8"/>
@@ -112,5 +112,5 @@
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwG2FvuLOl_rGjp4LHR6XSeLIG_ZjjJ0M&callback=initMap" type="text/javascript"></script>
 </body>
-</html> 
+</html>  --}}
 @endsection
