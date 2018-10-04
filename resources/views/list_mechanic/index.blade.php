@@ -1,4 +1,4 @@
-@extends ('layouts.app(repairshop)')
+@extends ('layouts.app')
 
 @section('content')
 {{-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
