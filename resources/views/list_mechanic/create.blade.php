@@ -81,7 +81,7 @@
 <div class="container">
                         <div class="form-group">
                                 {!! Form::open(['action'=> 'ListMechanicController@store', 'method' => 'POST']) !!}
-                                {{Form::label('name', 'Name')}}
+                                {{Form::label('na', 'Name')}}
                                 {{Form::text('lname', '', ['class' => 'form-control', 'placeholder' => 'Last name'])}}
                                 {{Form::text('fname', '', ['class' => 'form-control', 'placeholder' => 'First name'])}}
                                 {{Form::text('mi', '', ['class' => 'form-control', 'placeholder' => 'Middle initial'])}}
@@ -93,7 +93,7 @@
                          
                          
                             <div class="form-group">
-                                {{Form::label('name', 'Contact number')}}                                
+                                {{Form::label('number', 'Contact number')}}                                
                                 {{Form::text('phonenum', '', ['class' => 'form-control', 'placeholder' => 'Enter valid contact number'])}}
                             </div>
                             <div class="form-group">
