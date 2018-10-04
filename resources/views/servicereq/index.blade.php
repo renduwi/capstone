@@ -93,7 +93,7 @@
           <div class="row">
           <div class="col">
             <div class="radio">
-                {{Form::label('name', 'What is the situation?')}}        
+                {{Form::label('sit', 'What is the situation?')}}        
             </br>
                 {!! Form::radio('situation', 'Tire is flat', ['id' => '1']) !!}
                 {!! Form::label('radio1', 'Tire is flat') !!}
@@ -116,7 +116,7 @@
         </div>
           <div class="col">
           <div class="radio">
-              {{Form::label('name', 'Choose which vehicle')}}        
+              {{Form::label('vehic', 'Choose which vehicle')}}        
               </br>
             @if(count($serv) > 0)
 
