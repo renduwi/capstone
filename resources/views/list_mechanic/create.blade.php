@@ -89,7 +89,7 @@
                                 {{Form::text('email', '', ['class' => 'form-control', 'placeholder' => 'Email'])}}
                             
                              
-                                {{Form::text('password', '', ['class' => 'form-control', 'placeholder' => 'Password'])}}
+                                {{Form::password('password', '', ['class' => 'form-control', 'placeholder' => 'Password'])}}
                          
                          
                             <div class="form-group">
