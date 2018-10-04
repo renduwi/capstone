@@ -128,9 +128,9 @@ class ServiceReqController extends Controller
      */
     public function show($Sid)
     {
-       // $user_id = auth()->user()->Mid;
-        // $user = ServiceReq::find($user_id);
-        // return view('servicereq.show')->with('serv', $serv);
+        $user_id = auth()->user()->Mid;
+         $user = ServiceReq::find($user_id);
+        return view('servicereq.show')->with('serv', $serv);
         //return view('servicereq.show');
     }
 
