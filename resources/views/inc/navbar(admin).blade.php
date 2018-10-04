@@ -39,7 +39,7 @@
                     </li>
                     <li class="nav-item nav-bullet" style=" display: inline-block;
                     list-style: none;">
-                        <a class="nav-link text-uppercase" href="/mechaniclist">Mechanic</a>
+                        <a class="nav-link text-uppercase" href="/mechaniclist/create">Mechanic</a>
                     </li>
                     <li class="nav-item dropdown nav-bullet" style=" display: inline-block;
                     list-style: none;">
