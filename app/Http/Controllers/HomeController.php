@@ -44,7 +44,7 @@ class HomeController extends Controller
        }  
        elseif (auth()->user()->type == 'Repair Shop')
        {
-           return view('Admin_repairshop.index');
+           return view('list_mechanic.index');
        }  
     }
 
