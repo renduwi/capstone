@@ -35,7 +35,7 @@
                 <tr>
                   <th colspan="4">
                     <div class="ui right floated small primary labeled icon button">
-                        <a href="/mechaniclist/create" class="btn btn-warning">Add Vehicle</a>
+                        <a href="/mechaniclist/create" class="btn btn-warning">Add Mechanic</a>
                     </div>
                     
         </tfoot>
