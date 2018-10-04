@@ -43,7 +43,7 @@ class ListMechanicController extends Controller
     public function store(Request $request)
     {
           $this->validate($request, [
-            'email' => 'required|string|email|max:255|unique:users',
+            'email' => 'required|string|email|max:255',
             'password' => 'required|string|min:6',
             'ln' => 'required',
             'fn' => 'required',
