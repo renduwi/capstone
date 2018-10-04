@@ -87,6 +87,8 @@
       
       {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
       {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
+      {{Form::hidden('situation', 'On going', ['class' => 'form-control', 'id' => 'situation', 'placeholder' => ''])}}
+
         <div class="container">
           <div class="row">
           <div class="col">
@@ -108,7 +110,7 @@
                 {!! Form::radio('situation', 'Overheat', ['id' => '1']) !!}
                 {!! Form::label('radio1', 'Overheat') !!}
                 </br>
-                {!! Form::hidden('status', 'not yet done') !!}
+               
 
             </div>
         </div>

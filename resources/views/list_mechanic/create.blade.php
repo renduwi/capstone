@@ -100,7 +100,7 @@
                             {{Form::text('Rpid', '', ['class' => 'form-control', 'placeholder' => 'Rpid'])}}
                             </div>
 
-                            {{Form::hidden('availability', '1', ['class' => 'form-control'])}}
+                           
                             {{Form::hidden('lat', '', ['class' => 'form-control', 'id' => 'lat', 'placeholder' => ''])}}
                             {{Form::hidden('lng', '', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
                             {{Form::hidden('type', 'Mechanic', ['class' => 'form-control', 'id' => 'lng', 'placeholder' => ''])}}
