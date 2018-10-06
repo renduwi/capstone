@@ -23,7 +23,7 @@ class ServiceReqController extends Controller
     public function index()
     {
         $user_id = auth()->user()->id;
-        $user = DB::table('list_vehicles')->where('user_id', auth()->user()->id)->get();
+        $user = DB::table('list_vehicle')->where('user_id', auth()->user()->id)->get();
         
     return view('servicereq.index')->with('serv', $user);
        

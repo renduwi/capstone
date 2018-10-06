@@ -8,7 +8,7 @@ class ListVehicle extends Model
 {
     
     //table name
-    protected $table = 'list_vehicles';
+    protected $table = 'list_vehicle';
     //PK
     public $primaryKey = 'Veid';
     //Timestamp

@@ -36,6 +36,6 @@ class CreateTblListVehicle extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('list_vehicles');
+        Schema::dropIfExists('list_vehicle');
     }
 }

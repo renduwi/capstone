@@ -20,7 +20,7 @@
      <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
  
      <!-- Custom styles for this template -->
-     <link href="{{secure_asset('css/creative.min.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/creative.min.css') }}" rel="stylesheet">
      <title>Veem App</title>
    </head>
 
@@ -165,7 +165,7 @@
               <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
           
               <!-- Custom scripts for this template -->
-              <script src="{{secure_asset('js/creative.min.js')}}"></script>
+              <script src="{{ asset('js/creative.min.js')}}"></script>
           
             </body>
           

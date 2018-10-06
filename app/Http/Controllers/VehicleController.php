@@ -44,7 +44,10 @@ class VehicleController extends Controller
             'platenum' => 'required',
             'brand' => 'required',
             'model' => 'required',
-            'color' => 'required'
+            'color' => 'required',
+            'transmission' => 'required',
+            'manu_yr' => 'required',
+            'type' => 'required'
         ]);
 
         $vehicle = new ListVehicle;
@@ -54,6 +57,8 @@ class VehicleController extends Controller
         $vehicle->brand = $request->input('brand');
         $vehicle->model = $request->input('model');
         $vehicle->color = $request->get('color');
+        $vehicle->transmission = $request->get('transmission');
+        $vehicle->manu_yr = $request->get('manu_yr');
         $vehicle->user_id = auth()->user()->id;
         $vehicle->save();
 
