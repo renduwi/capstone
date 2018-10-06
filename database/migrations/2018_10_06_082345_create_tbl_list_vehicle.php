@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateListVehiclesTable extends Migration
+class CreateTblListVehicle extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,20 @@ class CreateListVehiclesTable extends Migration
      */
     public function up()
     {
-        Schema::create('list_vehicles', function (Blueprint $table) {
+        Schema::create('list_vehicle', function (Blueprint $table) {
             $table->increments('Veid');
             $table->string('platenum')->unique();
             $table->string('brand');
             $table->string('model');
             $table->string('name');
             $table->string('type');
-            $table->integer('id');
+            $table->string('transmission');
+            $table->string('manu_yr');
             $table->mediumText('color');
+            $table->integer('user_id');
             $table->timestamps();
         });
+
     }
 
     /**
